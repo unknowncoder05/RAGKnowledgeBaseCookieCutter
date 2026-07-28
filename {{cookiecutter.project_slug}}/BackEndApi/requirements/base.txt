@@ -1,0 +1,88 @@
+# ProjectMaker Shared Utilities
+pm-utils @ git+https://github.com/unknowncoder05/pm-utils.git@e8cee022d30a0ff48eb07dfcfaa26c330aadb7c6
+pm-auth @ git+https://github.com/unknowncoder05/pm-auth.git@6d92dcdeb404485b1211debe599e9eb2ed93a288
+pm-billing @ git+https://github.com/unknowncoder05/pm-billing.git@39102d47ec18264e8a964ba0eafd0e1a84bd7385
+pm-ai @ git+https://github.com/unknowncoder05/pm-ai.git@c53e4e85eacb5d8301661158f49bd81b78def9ea
+pm-sqlite-snapshots @ git+https://github.com/unknowncoder05/pm-sqlite-snapshots.git
+
+# Base
+pytz
+stripe
+python-slugify
+jinja2
+
+# Django
+Django
+django-cors-headers
+django-rest-passwordreset
+
+# Environment
+django-environ
+
+# Django REST Framework
+djangorestframework
+drf-nested-routers
+django-filter
+
+# JWT Authentication
+djangorestframework-simplejwt
+pyjwt
+
+# Passwords security
+argon2-cffi
+
+# Static files
+whitenoise
+
+# AWS
+boto3
+
+# Database & Storage
+psycopg2-binary
+django-storages
+pgvector>=0.3.0
+pypdf>=4.0.0
+
+# Channels & Celery (WebSocket and background tasks)
+channels
+channels_redis
+celery
+redis
+django-celery-beat
+aioredis
+
+# Translation support
+django-modeltranslation
+
+# Images
+pillow
+requests
+
+# Currencies
+django-money
+
+# Admin interface
+django-admin-interface
+
+# Email
+django-sendgrid-v5
+
+# Testing
+factory-boy
+pytest
+pytest-django
+
+{%- if cookiecutter.use_ai_integration == 'y' %}
+
+# AI Integration (Optional)
+# OpenAI
+openai
+pydantic
+httpx
+langchain-openai
+
+# Anthropic / Claude
+anthropic
+{%- endif %}
+
+drf-spectacular==0.27.2

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pm-rag"
+version = "0.1.0"
+description = "ProjectMaker retrieval augmented generation primitives for knowledge-base apps"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "django>=4.2",
+    "djangorestframework>=3.14",
+    "openai>=1.0.0",
+    "pgvector>=0.3.0",
+    "pypdf>=4.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pm_rag*"]
