@@ -43,6 +43,7 @@
     "terraform/lambda_functions",
     "BackEndApi/src/api",
     "*.html",
-    "projectmaker.yml"
+    "projectmaker.yml",
+    ".github/workflows"
   ]
 }
